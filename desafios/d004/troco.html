@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculando Troco</title>
+</head>
+<body>
+    <h1>Calculando Troco</h1>
+    <input type="button" value="Comparar produto" id="botão" onclick="start()"> 
+    <script>
+        function start() {
+            var produto = prompt('Que produto você está levando?')
+            var preço = prompt (`Quanto custa ${produto} que você está coprando?`)
+            var grana = prompt (`Qual foi o valor que você deu para pagar ${produto}`)
+            var troco = grana - preço
+            if (grana < preço) {
+                alert ('Dinheiro insufisiente')
+            } else {
+                alert (`Você comprou ${produto} que custou ${preço}. Deu ${grana} em dinheiro e vai receber ${troco}`)
+            }
+        }
+    </script>
+</body>
+</html>
